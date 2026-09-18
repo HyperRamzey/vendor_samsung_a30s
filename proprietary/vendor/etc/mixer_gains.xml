@@ -10,9 +10,11 @@
         <ctl name="DAC Gain" value="148" />
 	</path>
 
+	<!-- Main speaker trimmed ~10% (117->105) to balance the L(earpiece, EP
+	     Volume 8)/R(main, smart-PA) media split - user ear test 2026-09-18. -->
 	<path name="gain-media-speaker">
 		<ctl name="DAC Gain" value="55" />
-		<ctl name="Speaker Volume" value="117" />
+		<ctl name="Speaker Volume" value="105" />
 	</path>
 
 	<path name="gain-media-headset">
@@ -41,8 +43,9 @@
 		<ctl name="Earphone Volume" value="0" />
 	</path>
 
+	<!-- Trimmed ~10% (119->107): ringtone-speaker now uses the media L|R split. -->
 	<path name="gain-ringtone-speaker">
-		<ctl name="Speaker Volume" value="119" />
+		<ctl name="Speaker Volume" value="107" />
 	</path>
 
 	<path name="gain-ringtone-headset">
